@@ -2,7 +2,7 @@
 %define version 0.1.7b
 %define unmangled_version 0.1.7b
 %define unmangled_version 0.1.7b
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Stateful programmatic web browsing
 Name: python-%{oname}
@@ -15,6 +15,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 Url: http://wwwsearch.sourceforge.net/mechanize/
 BuildRequires: python-devel
+Requires: python-clientform
 
 %description
 Stateful programmatic web browsing, after Andy Lester's Perl module
@@ -50,4 +51,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
+%doc *.html *.txt
 %py_puresitedir/%{oname}*
