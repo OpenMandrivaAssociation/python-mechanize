@@ -11,6 +11,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 URL:		http://wwwsearch.sourceforge.net/mechanize/
 BuildRequires:	python-devel
+BuildRequires:	python-setuptools
 Requires:	python-clientform
 Obsoletes:	python-clientcookie < %{version}-%{release}
 
