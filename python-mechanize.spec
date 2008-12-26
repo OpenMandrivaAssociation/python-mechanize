@@ -1,21 +1,18 @@
 %define oname mechanize
-%define version 0.1.7b
-%define unmangled_version 0.1.7b
-%define unmangled_version 0.1.7b
-%define release %mkrel 2
 
-Summary: Stateful programmatic web browsing
-Name: python-%{oname}
-Version: %{version}
-Release: %{release}
-Source0: %{oname}-%{unmangled_version}.tar.gz
-License: BSD
-Group: Development/Python
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildArch: noarch
-Url: http://wwwsearch.sourceforge.net/mechanize/
-BuildRequires: python-devel
-Requires: python-clientform
+Summary:	Stateful programmatic web browsing
+Name:		python-%{oname}
+Version:	0.1.10
+Release:	%{mkrel 1}
+Source0:	http://wwwsearch.sourceforge.net/%{name}/src/%{oname}-%{version}.tar.gz
+License:	BSD
+Group:		Development/Python
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildArch:	noarch
+URL:		http://wwwsearch.sourceforge.net/mechanize/
+BuildRequires:	python-devel
+Requires:	python-clientform
+Obsoletes:	python-clientcookie < %{version}-%{release}
 
 %description
 Stateful programmatic web browsing, after Andy Lester's Perl module
@@ -34,22 +31,21 @@ Much of the code originally derived from Perl code by Gisle Aas
 (libwww-perl), Johnny Lee (MSIE Cookie support) and last but not least
 Andy Lester (WWW::Mechanize).  urllib2 was written by Jeremy Hylton.
 
-
-
 %prep
-%setup -q -n %{oname}-%{unmangled_version}
+%setup -q -n %{oname}-%{version}
 
 %build
 python setup.py build
 
 %install
-rm -rf $RPM_BUILD_ROOT
-python setup.py install --single-version-externally-managed --root=$RPM_BUILD_ROOT
+rm -rf %{buildroot}
+python setup.py install --single-version-externally-managed --root=%{buildroot}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
 %doc *.html *.txt
-%py_puresitedir/%{oname}*
+%{py_puresitedir}/%{oname}*
+
