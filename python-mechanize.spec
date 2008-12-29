@@ -3,7 +3,7 @@
 Summary:	Stateful programmatic web browsing
 Name:		python-%{oname}
 Version:	0.1.10
-Release:	%{mkrel 1}
+Release:	%{mkrel 2}
 Source0:	http://wwwsearch.sourceforge.net/%{name}/src/%{oname}-%{version}.tar.gz
 License:	BSD
 Group:		Development/Python
@@ -13,7 +13,8 @@ URL:		http://wwwsearch.sourceforge.net/mechanize/
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
 Requires:	python-clientform
-Obsoletes:	python-clientcookie < %{version}-%{release}
+Obsoletes:	python-clientcookie < 1.3.0-2
+Provides:	python-clientcookie
 
 %description
 Stateful programmatic web browsing, after Andy Lester's Perl module
