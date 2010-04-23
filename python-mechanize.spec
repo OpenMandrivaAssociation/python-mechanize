@@ -2,8 +2,8 @@
 
 Summary:	Stateful programmatic web browsing
 Name:		python-%{oname}
-Version:	0.1.11
-Release:	%mkrel 2
+Version:	0.2.0
+Release:	%mkrel 1
 Source0:	http://wwwsearch.sourceforge.net/%oname/src/%{oname}-%{version}.tar.gz
 License:	BSD
 Group:		Development/Python
@@ -48,6 +48,6 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc *.html *.txt
+%doc docs/* *.txt
 %{py_puresitedir}/%{oname}*
 
