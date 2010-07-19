@@ -2,7 +2,7 @@
 
 Summary:	Stateful programmatic web browsing
 Name:		python-%{oname}
-Version:	0.2.1
+Version:	0.2.2
 Release:	%mkrel 1
 Source0:	http://wwwsearch.sourceforge.net/%oname/src/%{oname}-%{version}.tar.gz
 License:	BSD
