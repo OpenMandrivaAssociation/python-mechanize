@@ -51,3 +51,66 @@ rm -rf %{buildroot}
 %doc docs/* *.txt
 %{py_puresitedir}/%{oname}*
 
+
+
+%changelog
+* Thu May 05 2011 Oden Eriksson <oeriksson@mandriva.com> 0.2.5-2mdv2011.0
++ Revision: 668001
+- mass rebuild
+
+* Fri Apr 01 2011 Götz Waschk <waschk@mandriva.org> 0.2.5-1
++ Revision: 649583
+- update to new version 0.2.5
+
+* Fri Oct 29 2010 Götz Waschk <waschk@mandriva.org> 0.2.4-1mdv2011.0
++ Revision: 589922
+- update to new version 0.2.4
+
+* Sun Oct 17 2010 Götz Waschk <waschk@mandriva.org> 0.2.3-1mdv2011.0
++ Revision: 586250
+- update to new version 0.2.3
+
+* Mon Jul 19 2010 Götz Waschk <waschk@mandriva.org> 0.2.2-1mdv2011.0
++ Revision: 554907
+- update to new version 0.2.2
+
+* Sat Jul 10 2010 Götz Waschk <waschk@mandriva.org> 0.2.1-1mdv2011.0
++ Revision: 550284
+- update to new version 0.2.1
+
+* Fri Apr 23 2010 Götz Waschk <waschk@mandriva.org> 0.2.0-1mdv2010.1
++ Revision: 538140
+- new version
+- update docs list
+
+* Wed Mar 17 2010 Oden Eriksson <oeriksson@mandriva.com> 0.1.11-2mdv2010.1
++ Revision: 523829
+- rebuilt for 2010.1
+
+* Mon Jun 08 2009 Götz Waschk <waschk@mandriva.org> 0.1.11-1mdv2010.0
++ Revision: 383904
+- new version
+- fix source URL
+
+* Mon Dec 29 2008 Adam Williamson <awilliamson@mandriva.org> 0.1.10-2mdv2009.1
++ Revision: 320810
+- clean up the clientcookie obsolete / provide
+
+* Fri Dec 26 2008 Adam Williamson <awilliamson@mandriva.org> 0.1.10-1mdv2009.1
++ Revision: 319215
+- buildrequires python-setuptools
+- rebuild with python 2.6
+- obsolete python-clientcookie
+- clean spec a bit
+- new release 0.1.10
+
+* Sun Jul 27 2008 Götz Waschk <waschk@mandriva.org> 0.1.7b-2mdv2009.0
++ Revision: 250656
+- add docs
+- update deps
+
+* Sun Jul 27 2008 Götz Waschk <waschk@mandriva.org> 0.1.7b-1mdv2009.0
++ Revision: 250619
+- import python-mechanize
+
+
