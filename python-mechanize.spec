@@ -3,15 +3,15 @@
 Summary:	Stateful programmatic web browsing
 Name:		python2-%{oname}
 Version:	0.2.5
-Release:	11
+Release:	12
 License:	BSD
 Group:		Development/Python
 Url:		http://wwwsearch.sourceforge.net/mechanize/
 Source0:	http://wwwsearch.sourceforge.net/%oname/src/%{oname}-%{version}.tar.gz
 BuildArch:	noarch
-BuildRequires:	python-setuptools
-BuildRequires:	pkgconfig(python)
-Requires:	python-clientform
+BuildRequires:	python2-setuptools
+BuildRequires:	pkgconfig(python2)
+Requires:	python2-clientform
 %rename		python-%oname
 
 %description
