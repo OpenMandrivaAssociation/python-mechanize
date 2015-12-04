@@ -1,7 +1,7 @@
 %define oname mechanize
 
 Summary:	Stateful programmatic web browsing
-Name:		python-%{oname}
+Name:		python2-%{oname}
 Version:	0.2.5
 Release:	11
 License:	BSD
@@ -12,6 +12,7 @@ BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRequires:	pkgconfig(python)
 Requires:	python-clientform
+%rename		python-%oname
 
 %description
 Stateful programmatic web browsing, after Andy Lester's Perl module
@@ -34,12 +35,12 @@ Andy Lester (WWW::Mechanize).  urllib2 was written by Jeremy Hylton.
 %setup -qn %{oname}-%{version}
 
 %build
-python setup.py build
+python2 setup.py build
 
 %install
-python setup.py install --single-version-externally-managed --root=%{buildroot}
+python2 setup.py install --single-version-externally-managed --root=%{buildroot}
 
 %files
 %doc docs/* *.txt
-%{py_puresitedir}/%{oname}*
+%{py2_puresitedir}/%{oname}*
 
