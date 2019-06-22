@@ -36,7 +36,6 @@ Andy Lester (WWW::Mechanize).  urllib2 was written by Jeremy Hylton.
 
 %build
 %py_build
-python2 setup.py build
 
 %install
 %py_install
