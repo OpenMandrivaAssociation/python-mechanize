@@ -2,16 +2,16 @@
 
 Summary:	Stateful programmatic web browsing
 Name:		python2-%{oname}
-Version:	0.2.5
+Version:	0.4.2
 Release:	13
 License:	BSD
 Group:		Development/Python
 Url:		http://wwwsearch.sourceforge.net/mechanize/
-Source0:	http://wwwsearch.sourceforge.net/%oname/src/%{oname}-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/79/6b/c256ffe2abd560a2857bd66131e01ddfb4b123510a0100a495ded8f191cc/mechanize-0.4.2.tar.gz
 BuildArch:	noarch
-BuildRequires:	python2-setuptools
-BuildRequires:	pkgconfig(python2)
-Requires:	python2-clientform
+BuildRequires:	python-setuptools
+BuildRequires:	pkgconfig(python)
+Requires:	python-clientform
 %rename		python-%oname
 
 %description
@@ -35,12 +35,12 @@ Andy Lester (WWW::Mechanize).  urllib2 was written by Jeremy Hylton.
 %setup -qn %{oname}-%{version}
 
 %build
+%py_build
 python2 setup.py build
 
 %install
-python2 setup.py install --single-version-externally-managed --root=%{buildroot}
+%py_install
 
 %files
-%doc docs/* *.txt
-%{py2_puresitedir}/%{oname}*
+%{py_puresitedir}/%{oname}*
 
