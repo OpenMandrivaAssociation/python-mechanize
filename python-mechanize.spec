@@ -1,7 +1,7 @@
 %define oname mechanize
 
 Summary:	Stateful programmatic web browsing
-Name:		python2-%{oname}
+Name:		python-%{oname}
 Version:	0.4.3
 Release:	1
 License:	BSD
