@@ -2,12 +2,12 @@
 
 Summary:	Stateful programmatic web browsing
 Name:		python2-%{oname}
-Version:	0.4.2
-Release:	13
+Version:	0.4.3
+Release:	1
 License:	BSD
 Group:		Development/Python
 Url:		http://wwwsearch.sourceforge.net/mechanize/
-Source0:	https://files.pythonhosted.org/packages/79/6b/c256ffe2abd560a2857bd66131e01ddfb4b123510a0100a495ded8f191cc/mechanize-0.4.2.tar.gz
+Source0:	https://files.pythonhosted.org/packages/64/f1/1aa4c96dea14e17a955019b0fc4ac1b8dfbc50e3c90970c1fb8882e74a7b/mechanize-0.4.3.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRequires:	pkgconfig(python)
