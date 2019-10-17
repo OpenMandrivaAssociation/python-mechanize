@@ -3,7 +3,7 @@
 Summary:	Stateful programmatic web browsing
 Name:		python-%{oname}
 Version:	0.4.3
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Python
 Url:		http://wwwsearch.sourceforge.net/mechanize/
@@ -11,7 +11,6 @@ Source0:	https://files.pythonhosted.org/packages/64/f1/1aa4c96dea14e17a955019b0f
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRequires:	pkgconfig(python)
-Requires:	python-clientform
 %rename		python-%oname
 
 %description
