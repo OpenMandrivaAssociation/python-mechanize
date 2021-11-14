@@ -2,12 +2,12 @@
 
 Summary:	Stateful programmatic web browsing
 Name:		python-%{oname}
-Version:	0.4.5
+Version:	0.4.7
 Release:	1
 License:	BSD
 Group:		Development/Python
 Url:		http://wwwsearch.sourceforge.net/mechanize/
-Source0:	https://files.pythonhosted.org/packages/77/1b/7e4b644108e4e99b136e52c6aae34873fcd267e3d2489f3bd2cff8655a59/mechanize-0.4.5.tar.gz
+Source0:	https://files.pythonhosted.org/packages/b0/12/2226549e042be8f2f4dddd3b4a44973e7bacd229f857299f33bde3f77e9d/mechanize-0.4.7.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 BuildRequires:	pkgconfig(python)
